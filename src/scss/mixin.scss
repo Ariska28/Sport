@@ -1,0 +1,11 @@
+@mixin svg($width: 30px, $height: 30px) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexes($flex, $column, $center, $space-between) {
+    display: $flex;
+    flex-direction: $column;
+    align-items: $center;
+    justify-content: $space-between;
+}
