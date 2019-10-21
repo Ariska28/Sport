@@ -1,24 +1,25 @@
+
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #F4F6F9;
     z-index: 1;
+    height: 100%;
 
 
     &-img {
-        background: url("img/rer.png");
-        width: 50%;
+        width: 60%;
         height: 100%;
         z-index: 10;
+        align-self: flex-start;
+        display: flex;
+        justify-content: flex-end;
     }
 
+
     &-caption {
-        align-self:stretch;
-        padding-left:163px;
-        margin-bottom: 64px;;
-        @include flexes(flex,column,center,center);
-        justify-content: space-between;
+        width: 40%;
 
         &__logotype {
             color: #5282F0;
@@ -26,10 +27,8 @@
             line-height: 29px;
             letter-spacing: -0.02em;
             font-weight: bold;
-            display:flex;
-            align-items:center;
-            width:100%;
-            height: 30%;
+            margin-bottom: 133px;
+            
 
             &-img {
                 @include svg(30px,30px);
@@ -38,11 +37,9 @@
         }
 
         &__inf {
-            display: flex;
-            flex-direction: column;
-            height: 70%;
-            justify-content: space-between;
-
+            padding-left: 163px;
+            padding-bottom: 164px;
+            padding-top: 61px;
         }
 
         &__headline {
@@ -52,8 +49,7 @@
             line-height: 48px;
             letter-spacing: 0.03em;
             color: #333333;
-            flex-grow: 0.3;
-            padding-bottom: 30px;
+            margin-bottom: 30px;
         }
 
         &__paragraf {
@@ -62,8 +58,7 @@
             font-size: 18px;
             line-height: 26px;
             color: #4F4F4F;
-            flex-grow: 0.3;
-            padding-bottom: 20px;
+            margin-bottom: 50px;
         }
 
         &__buttons {
