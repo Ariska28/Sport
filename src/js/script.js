@@ -6,6 +6,5 @@ $().ready(function(){
     centerPadding: '50px',
     slidesToShow: 3,
     dots: true
-    
   });
 });

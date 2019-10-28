@@ -17,6 +17,12 @@
         align-self: flex-start;
         display: flex;
         justify-content: flex-end;
+
+        &--phones {
+            align-self: flex-start;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 
 
@@ -120,3 +126,8 @@
 
     }
 }
+.slick-dots {
+    font-size: 15px;
+}
+
+

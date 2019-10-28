@@ -69,6 +69,7 @@
     }
 }
 
+
 .phone {
     position: relative;
     @include flexes(flex,row,flex-start,space-between); 
@@ -175,7 +176,7 @@
     &-invisible--r {
         position: absolute;
         z-index: 1;
-        right:-2%;
+        right:-5%;
         top: -5%;
 
         &__img {
@@ -240,42 +241,65 @@
 
     &__block {
         width: 100%;
-        z-index: 0;
-           
-            &-describe {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 18px;
-                color: #4F4F4F;
-            }
+        z-index: 0;    
 
             
         &__item{
             width: 200px;
             border: 1px solid #828282;
             border-radius: 4px;
-            margin: 0 36px;
+            margin: 0 16px;
             max-height:270px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;  
             padding:20px;
 
-        }
+            &-describe {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: #4F4F4F;
+                padding-bottom:10px;
+                padding-top:18px;
 
-        &-head {
-            display: flex;
-            align-items: center;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 19px;
-            color:$color-black;
-            
-        }
+            }
 
-        
+            &-h4 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &-head {
+                display: flex;
+                align-items: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color:$color-black;
+                
+            }
+
+            &-author {
+                margin-right: 11px;
+            }
+
+            &-img {
+                @include svg(15px,15px);
+            }
+
+            &-link {
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                margin-left:auto;
+            }
+
+        }      
 
     }
 
@@ -285,7 +309,7 @@
     }
 
     &-track {
-        height: 170px;
+        height: 180px;
     }
 }
 

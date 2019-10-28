@@ -3,9 +3,8 @@ $().ready(function(){
     prevArrow: $('.slick__prewarrow'),
     nextArrow: $('.slick__nextarrow'),
     centerMode: true,
-    centerPadding: '50px',
+    centerPadding: '150px',
     slidesToShow: 3,
     dots: true
-    
   });
 });
