@@ -11,9 +11,9 @@
     width: 65%;
   }
   &-video {
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 490px;
+    left: 500px;
+    transform: translate(-50%,-50%);
     z-index: 4;
     position: absolute;
   }
@@ -26,10 +26,9 @@
 
   &-window {
     position: absolute;
-    top: 35%;
-    left: 30%;
-    left: 35;
-    transform: translateX(-50%);
+    top: 340px;
+    left: 350px;  
+    transform: translate(-50%,-50%);
     z-index: 6;
   }
 

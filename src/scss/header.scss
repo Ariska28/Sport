@@ -21,7 +21,6 @@
         &--phones {
             align-self: flex-start;
             display: flex;
-            justify-content: flex-end;
         }
     }
 
@@ -36,7 +35,8 @@
             letter-spacing: -0.02em;
             font-weight: bold;
             margin-bottom: 133px;
-            
+            display: flex;
+            align-items: center;
 
             &-img {
                 @include svg(30px,30px);
