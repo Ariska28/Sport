@@ -1,0 +1,22 @@
+.phone {
+  position: relative;
+  @include flexes(flex, row, flex-start, space-between);
+  height: 700px;
+  overflow: hidden;
+
+  &-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    z-index: 7;
+    width: 50%;
+    padding-left: 162px;
+  }
+
+  &-photo {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+  }
+}

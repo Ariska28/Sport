@@ -1,0 +1,152 @@
+.slick {
+  height: 400px;
+  overflow: hidden;
+  @include flexes(flex, column, center, space-around);
+  position: relative;
+
+  &-invisible--l {
+    position: absolute;
+    z-index: 1;
+    left: -2%;
+    top: -5%;
+
+    &__img {
+      height: 200px;
+    }
+  }
+
+  &-invisible--r {
+    position: absolute;
+    z-index: 1;
+    right: -2%;
+    top: -5%;
+    transform: rotate(180deg);
+
+    &__img {
+      height: 200px;
+    }
+  }
+
+  &__prewarrow {
+    height: 47px;
+    width: 47px;
+    background: #ffffff;
+    border: 1px solid $color-blue;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+    &-img {
+      @include svg(8px, 14px);
+    }
+  }
+
+  &__nextarrow {
+    height: 47px;
+    width: 47px;
+    background: #ffffff;
+    border: 1px solid $color-blue;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+    &-img {
+      @include svg(8px, 14px);
+    }
+  }
+
+  &__headline {
+    padding-top: 62px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+  }
+
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+  }
+
+  &__block {
+    width: 100%;
+    z-index: 0;
+
+    &__item {
+      width: 200px;
+      border: 1px solid #828282;
+      border-radius: 4px;
+      margin: 0 16px;
+      max-height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+
+      &-describe {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #4f4f4f;
+        padding-bottom: 10px;
+        padding-top: 18px;
+      }
+
+      &-h4 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &-head {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-black;
+      }
+
+      &-author {
+        margin-right: 11px;
+      }
+
+      &-img {
+        @include svg(15px, 15px);
+      }
+
+      &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &-slick {
+    width: 90%;
+    height: 100%;
+  }
+
+  &-track {
+    height: 180px;
+  }
+}

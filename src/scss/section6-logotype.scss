@@ -1,0 +1,59 @@
+.logotype {
+  height: 260px;
+  overflow: hidden;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__headline {
+    padding-top: 57px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+  }
+
+  &-block {
+    display: flex;
+    padding-bottom: 73px;
+    width: 100%;
+    padding-right: 180px;
+    padding-left: 180px;
+    justify-content: space-between;
+
+    &__img1 {
+      @include svg(150px, 40px);
+    }
+
+    &__img2 {
+      @include svg(100px, 35px);
+    }
+
+    &__img3 {
+      @include svg(76px, 60px);
+    }
+
+    &__img4 {
+      @include svg(115px, 35px);
+    }
+
+    &__img5 {
+      @include svg(50px, 50px);
+    }
+
+    &__img6 {
+      @include svg(220px, 30px);
+    }
+
+    &__link-img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
