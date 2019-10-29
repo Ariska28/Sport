@@ -9,6 +9,9 @@
     z-index: 1;
     left: -2%;
     top: -5%;
+    @media screen and (max-width:1000px){
+      display: none;
+    }
 
     &__img {
       height: 200px;
@@ -21,6 +24,11 @@
     right: -2%;
     top: -5%;
     transform: rotate(180deg);
+    @media screen and (max-width:1000px){
+      display: none;
+    }
+    
+
 
     &__img {
       height: 200px;
@@ -46,6 +54,7 @@
     }
   }
 
+
   &__nextarrow {
     height: 47px;
     width: 47px;
@@ -64,6 +73,8 @@
       @include svg(8px, 14px);
     }
   }
+
+
 
   &__headline {
     padding-top: 62px;
@@ -96,6 +107,9 @@
       flex-direction: column;
       justify-content: space-around;
       padding: 20px;
+      @media screen and (max-width:1000px){
+        margin: 0 90px;
+      }
 
       &-describe {
         font-style: normal;
@@ -148,5 +162,6 @@
 
   &-track {
     height: 180px;
+      margin-left: auto;
   }
 }

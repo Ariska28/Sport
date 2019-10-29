@@ -1,7 +1,5 @@
 .football {
     height: 700px;
-    
-
     @media screen and (max-width: 1350px) 
     {
       height: 90%;
@@ -52,7 +50,7 @@
 
   &-gradient {
     position: absolute;
-    left: 0;
+    left: 0.1%;
     width: 100%;
 
     @media screen and (max-width: 1350px) 

@@ -43,6 +43,7 @@
 
     &-img {
       @include svg(50px, 40px);
+      fill:#fff;
     }
     &-text {
       font-style: normal;
@@ -51,5 +52,55 @@
       line-height: 23px;
       color: #ffffff;
     }
+    &-text::before {
+      content: '•';
+    }
   }
+}
+
+@media screen and (max-width:1000px) {
+
+  .blue-block {
+    @include flexes(flex, column, center, space-between);
+    z-index: 6;
+    background:#FAFAFA;
+
+   
+    &__headline {
+      color: #4F4F4F;;
+      align-self: center;
+      text-align: center;
+    }
+  
+    &__table {      padding-bottom: 66px;
+      padding-left: 150px;
+      padding-right: 150px;
+      height: 70%;
+      @include flexes(flex, column, center, space-between);
+
+  
+      &-row {
+        width: 100%;
+        @include flexes(flex, column, center, space-between);
+        height: 100%;
+      }
+      &-sell {
+        @include flexes(flex, column, center,center);
+        width: 100%;
+      }
+  
+      &-img {
+        fill:#00ADEE;
+      }
+      &-text {
+        color: #4F4F4F;
+        text-align: center;
+        width: 100%;
+      }
+      &-text::before {
+        content: '';
+      }
+    }
+  }
+  
 }

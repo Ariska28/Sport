@@ -1,12 +1,18 @@
 .phone {
   position: relative;
-  @include flexes(flex, row, flex-start, space-between);
+  @include flexes(flex, row, flex-start, flex-end);
   height: 700px;
   overflow: hidden;
-  background: url('C:/Users/Arina.Karmanova/Desktop/Sport/img/circlePhone.svg') no-repeat;
+  
   background-attachment: right;
   width: 100%;
 
+  &-photo {
+    background: url('C:/Users/Arina.Karmanova/Desktop/Sport/img/circlePhone.svg') no-repeat;
+    background-attachment: right;
+    width: 100%;
+    height: 100%;
+  }
 
   &-caption {
     display: flex;
@@ -16,7 +22,43 @@
     z-index: 7;
     width: 50%;
     padding-left: 162px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0%;
   }
 
 }
-@media ()
+
+@media screen and (max-width:1350px) {
+  .phone {
+    position: relative;
+    @include flexes(flex, column, flex-start, space-between);
+    height: 100%;
+    overflow: hidden;
+    background-attachment: right;
+    width: 100%;
+  
+    &-photo {
+      background: url('C:/Users/Arina.Karmanova/Desktop/Sport/img/circlePhone.svg') no-repeat;
+      background-position: right;
+      background-size: 170%;
+      width: 100%;
+      height: 700px;
+    }
+  
+    &-caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: stretch;
+      z-index: 7;
+      width: 100%;
+      padding:10px 30px;
+      position: static;
+      transform: none;
+      text-align: center;
+    }
+  
+  }
+}
