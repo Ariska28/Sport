@@ -24,6 +24,10 @@
     padding-left: 180px;
     justify-content: space-between;
 
+    &__img {
+      margin-right: 15px;
+    }
+
     &__img1 {
       @include svg(150px, 40px);
     }

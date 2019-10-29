@@ -4,12 +4,11 @@
   overflow: hidden;
   @include flexes(flex, column, center, space-between);
   z-index: 6;
-  &__img {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    z-index: 2;
+  background: url('C:/Users/Arina.Karmanova/Desktop/Sport/img/blue.svg');
+  @media screen and (max-width: 1350px) {
+    height: 100%;
   }
+ 
   &__headline {
     z-index: 6;
     font-style: normal;
@@ -20,6 +19,7 @@
     align-self: center;
     padding-top: 74px;
     height: 20%;
+    margin-bottom: 30px;
   }
 
   &__table {
@@ -38,6 +38,7 @@
     &-sell {
       height: 33%;
       @include flexes(flex, column, flex-start, flex-start);
+      margin-bottom: 30px;
     }
 
     &-img {
