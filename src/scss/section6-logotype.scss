@@ -23,6 +23,11 @@
     padding-right: 180px;
     padding-left: 180px;
     justify-content: space-between;
+    @media screen and (max-width:1000px)
+    {
+      padding-right: 80px;
+      padding-left: 80px;
+    }
 
     &__img {
       margin-right: 15px;
@@ -61,3 +66,5 @@
     }
   }
 }
+
+

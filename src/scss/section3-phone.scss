@@ -3,6 +3,10 @@
   @include flexes(flex, row, flex-start, space-between);
   height: 700px;
   overflow: hidden;
+  background: url('C:/Users/Arina.Karmanova/Desktop/Sport/img/circlePhone.svg') no-repeat;
+  background-attachment: right;
+  width: 100%;
+
 
   &-caption {
     display: flex;
@@ -14,9 +18,5 @@
     padding-left: 162px;
   }
 
-  &-photo {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-  }
 }
+@media ()

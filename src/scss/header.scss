@@ -62,10 +62,8 @@
             padding-left: 163px;
             padding-bottom: 164px;
             padding-top: 61px;
-            @media screen and (max-width: 1350px) 
-            {
-                padding-right:  163px;
-            }
+            padding-right: 163px;
+
         }
 
         &__headline {
@@ -76,6 +74,7 @@
             letter-spacing: 0.03em;
             color: #333333;
             margin-bottom: 30px;
+
         }
 
         &__paragraf {
@@ -146,3 +145,20 @@
 }
 
 
+@media screen and (max-width:1000px) {
+    .header-caption__headline,.header-caption__paragraf {
+        text-align: center;
+    }
+
+    .header-caption__buttons {
+        justify-content: center;
+    }
+
+    .header-caption__logotype {
+        justify-content: center;
+    }
+
+    .header-caption__inf {
+        padding: 90px;
+    }
+}

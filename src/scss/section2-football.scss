@@ -124,3 +124,22 @@
     }
   }
 }
+
+@media screen and (max-width:1000px) {
+  .football-photos {
+    height: 400px;
+  }
+
+  .football-video {
+    top:60%;
+    left:60%;
+    transform: translate(-50%,-50%);
+
+  }
+.football-window {
+      top:40%;
+      left:40%;
+      transform: translate(-50%,-50%);
+}
+
+}
