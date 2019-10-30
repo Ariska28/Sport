@@ -3,6 +3,7 @@
   overflow: hidden;
   @include flexes(flex, column, center, space-around);
   position: relative;
+  margin-bottom: 20px;
 
   &-invisible--l {
     position: absolute;
@@ -164,8 +165,9 @@
   }
 
   &-track {
-    height: 180px;
-      margin-left: auto;
-      padding-top: 30px;
+     height: 180px;
+    margin-left: auto;
+    margin-top:30px
+      
   }
 }
