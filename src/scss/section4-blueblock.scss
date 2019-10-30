@@ -1,6 +1,5 @@
 .blue-block {
   position: relative;
-  height: 700px;
   overflow: hidden;
   @include flexes(flex, column, center, space-between);
   z-index: 6;
