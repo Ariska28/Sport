@@ -8,16 +8,6 @@ $().ready(function () {
     dots: true,
     responsive: [
       {
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 2,
-          dots: true,
-          centerPadding: '0px',
-          infinite: true,
-          centerMode: true,
-        }
-      },
-      {
         breakpoint: 1000,
         settings: {
           slidesToShow: 1,

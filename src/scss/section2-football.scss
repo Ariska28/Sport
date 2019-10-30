@@ -1,12 +1,12 @@
 .football {
-    height: 700px;
-    @media screen and (max-width: 1350px) 
+    height: 540px;
+    @media screen and (max-width: 1200px) 
     {
       height: 90%;
     }
     overflow: hidden;
     @include flexes(flex, row, flex-start, flex-start);
-    @media screen and (max-width: 1350px) 
+    @media screen and (max-width: 1200px) 
     {
       @include flexes(flex,column-reverse, center, center);
     }
@@ -22,28 +22,28 @@
     background-size: 100%;
     z-index: 10;
    
-    @media screen and (max-width: 1350px) 
+    @media screen and (max-width: 1200px) 
     {
       width: 100%;
       height: 800px;
     }
   }
   &-video {
-    top: 490px;
+    top: 360px;
     left: 500px;
     transform: translate(-50%,-50%);
     z-index: 4;
     position: absolute;
-    @media screen and (max-width: 1700px) and (min-width: 1350px)
+    @media screen and (max-width: 1700px) and (min-width: 1500px)
     {
       top: 410px; 
     }
 
-    @media screen and (max-width: 1350px) 
+    @media screen and (max-width: 1500px) 
     {
       top:50%;
-      left:50%;
-      transform: translate(-50%,-50%);
+      left:60%;
+      transform: translate(-50%,-25%);
     }
     
   }
@@ -53,7 +53,7 @@
     left: 0.1%;
     width: 100%;
 
-    @media screen and (max-width: 1350px) 
+    @media screen and (max-width: 1200px) 
     {
       top:0%;
       transform: rotate(270deg) scaleY(1.5);
@@ -64,29 +64,29 @@
 
   &-window {
     position: absolute;
-    top: 340px;
+    top: 270px;
     left: 350px;  
     transform: translate(-50%,-50%);
     z-index: 6;
-    @media screen and (max-width: 1700px) and (min-width: 1350px)
+    @media screen and (max-width: 1700px) and (min-width: 1500px)
     {
       top: 260px; 
     }
-    @media screen and (max-width: 1350px) 
+    @media screen and (max-width: 1500px) 
     {
       top:30%;
       left:30%;
-      transform: translate(-50%,-50%);
+      transform: translate(-30%,-30%);
 
     }
   }
 
   &-caption {
-    width: 45%;
+    width: 52%;
     align-self: stretch;
     @include flexes(flex, column, flex-start, center);
     padding-right: 217px;
-    @media screen and (max-width: 1350px) 
+    @media screen and (max-width: 1200px) 
     {
       width: 100%;
       @include flexes(flex, column, center, center);

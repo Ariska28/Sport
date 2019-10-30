@@ -1,7 +1,7 @@
 .phone {
   position: relative;
   @include flexes(flex, row, flex-start, flex-end);
-  height: 700px;
+  height: 675px;
   overflow: hidden;
   
   background-attachment: right;
@@ -33,7 +33,7 @@
 
 
 
-@media screen and (max-width:1450px) and (min-width:1000px) {
+@media screen and (max-width:1200px) and (min-width:1000px) {
   .phone {
     position: relative;
     @include flexes(flex, column, flex-start, space-between);

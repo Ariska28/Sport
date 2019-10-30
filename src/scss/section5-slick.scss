@@ -98,15 +98,16 @@
     z-index: 0;
 
     &__item {
-      width: 200px;
+      width: 150px;
       border: 1px solid #828282;
       border-radius: 4px;
       margin: 0 16px;
-      max-height: 270px;
+      max-height: 150px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       padding: 20px;
+      overflow: auto;
       
       @media screen and (max-width:1000px){
         margin: 0 90px;
