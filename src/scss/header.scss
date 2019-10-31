@@ -1,7 +1,7 @@
 
 .conteiner {
-    width:1150px;
-    padding:60px  20px;
+    max-width:1150px;
+    padding:8% 20px;
     margin: auto;
 }
 
@@ -16,15 +16,14 @@
     background-image :url('../img/Mobile.svg') no-repeat;
     background-position: top right;
     background-size:  60%;
-    @media screen and (max-width: 1200px) 
+    @media screen and (max-width: 1160px) 
     {
-        height: 100%;
+        background-image:none;
     }
-
 
     &-caption {
         width: 60%;
-        @media screen and (max-width: 1200px) 
+        @media screen and (max-width: 1160px) 
         {
             width: 100%;
         }
@@ -125,7 +124,7 @@
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1160px) {
     .header-caption__headline,.header-caption__paragraf {
         text-align: center;
     }
@@ -136,9 +135,5 @@
 
     .header-caption__logotype {
         justify-content: center;
-    }
-
-    .header-caption__inf {
-        padding: 90px;
     }
 }

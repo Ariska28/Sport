@@ -1,12 +1,13 @@
 .blue-block {
-  position: relative;
   overflow: hidden;
-  @include flexes(flex, column, center, space-between);
   z-index: 6;
   background: url('../img/blue.svg');
-  @media screen and (max-width: 1350px) {
-    height: 100%;
-  }
+
+  &__conteiner {
+    max-width:1150px;
+    padding: 5.5% 20px 3% ;
+    margin: auto;
+}
  
   &__headline {
     z-index: 6;
@@ -15,29 +16,21 @@
     font-size: 28px;
     line-height: 37px;
     color: #ffffff;
-    align-self: center;
-    padding-top: 74px;
-    height: 20%;
-    margin-bottom: 30px;
+    text-align: center;
   }
 
   &__table {
+    margin-top: 45px;
     z-index: 6;
-    padding-bottom: 66px;
-    padding-left: 164px;
-    padding-right: 163px;
-    height: 70%;
-    @include flexes(flex, row, flex-start, space-between);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    &-row {
-      width: 30%;
-      @include flexes(flex, column, flex-start, space-between);
-      height: 100%;
-    }
+
     &-sell {
-      height: 33%;
       @include flexes(flex, column, flex-start, flex-start);
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      max-width: 30%;
     }
 
     &-img {
@@ -71,23 +64,13 @@
       text-align: center;
     }
   
-    &__table {      padding-bottom: 66px;
-      padding-left: 150px;
-      padding-right: 150px;
-      height: 70%;
+    &__table {      
       @include flexes(flex, column, center, space-between);
 
-  
-      &-row {
-        width: 100%;
-        @include flexes(flex, column, center, space-between);
-        height: 100%;
-      }
       &-sell {
         @include flexes(flex, column, center,center);
         width: 100%;
       }
-  
       &-img {
         fill:#00ADEE;
       }

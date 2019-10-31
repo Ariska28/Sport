@@ -6,6 +6,12 @@
   align-items: center;
   justify-content: space-between;
 
+  &__conteiner {
+    max-width:1150px;
+    padding:3.5% 20px;
+    margin: auto;
+}
+
    
   @media screen and (max-width:1000px)
   {
@@ -14,21 +20,18 @@
   }
 
   &__headline {
-    padding-top: 57px;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 37px;
     color: #333333;
-    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 50px;
   }
 
   &-block {
     display: flex;
-    padding-bottom: 73px;
     width: 100%;
-    padding-right: 180px;
-    padding-left: 180px;
     justify-content: space-between;
     @media screen and (max-width:1000px)
     {

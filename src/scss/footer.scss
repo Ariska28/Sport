@@ -1,12 +1,21 @@
 .footer {
     background: #00ADEE;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: -70px;
+    margin-bottom: -75px;
+    @media screen and (max-width:900px) {
+        display: none;
+    }
+    &__conteiner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 20px;
+        max-width:1150px;
+        margin: auto;
+        flex-wrap: wrap;
+        
+    }
 
     &-sport{
-        padding-left: 163px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,7 +46,6 @@
 
     &-networks {
         display: flex;
-        padding-right: 167px;
 
         &__circle {
             height: 25px;
@@ -49,12 +57,70 @@
             align-items: center;
             margin-right: 17px;
         }
-
         &__img {
             @include svg(15px,15px);
         }
-
-
     }
+}
 
+
+@media screen and (max-width:1160px) {
+    .footer {
+        &__conteiner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3% 20px;
+            width:900px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+    
+        &-sport{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            letter-spacing: -0.02em;
+        
+            &__img {
+                @include svg(25px,25px);
+            }
+        }
+    
+    
+        &-links {
+            display: flex;
+    
+        }
+        &-link {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+            color: #fff;
+            margin-right: 36px;
+        }
+    
+    
+        &-networks {
+            display: flex;
+    
+            &__circle {
+                height: 25px;
+                width: 25px;
+                background: white;
+                border-radius:50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 17px;
+            }
+            &__img {
+                @include svg(15px,15px);
+            }
+        }
+    }
 }

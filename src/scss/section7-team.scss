@@ -1,41 +1,18 @@
 .team {
-    display: flex;
-    align-items: center;
-    z-index: 1;
     overflow: hidden;
-    @media screen and (max-width:1000px) {
-        flex-direction: column-reverse;
-        height: 100%;
-    }
+    background: url('../img/team.svg') no-repeat;
+    background-size: 50% 100%;
 
-    &-img {
-        width: 50%;
-        height: 100%;
-        z-index: 10;
-        align-self: flex-start;
+    &__conteiner {
+        max-width:1150px;
+        padding: 7% 20px;
+        margin: auto;
         display: flex;
-        justify-content: flex-start;
-        background: url('../img/team.svg') no-repeat;
-        @media screen and (max-width:1000px) {
-            height: 660px;
-            width: 100%;
-            background-size: 100%;
-            background-position: right;
-        }
-
-        &__img {
-            align-self: flex-start;
-            display: flex;
-            justify-content: flex-start;
-        }
+        justify-content: flex-end;
     }
-
 
     &-caption {
         width: 50%;
-        height: 100%;
-        padding-right: 152px;
-        padding-left: 15px;
         @media screen and (max-width:1100px) {
             padding-right: 40px;
             padding-left: 40px;
@@ -51,8 +28,7 @@
             line-height: 37px;
             letter-spacing: 0.03em;
             color: #333333;
-            margin-bottom: 35px;
-            margin-top: 105px;
+            margin-bottom: 20px;
         }
 
         &__paragraf {
@@ -61,7 +37,7 @@
             font-size: 16px;
             line-height: 25px;
             color: #4F4F4F;
-            margin-bottom: 38px;
+            margin-bottom: 20px;
         }
 
         &__buttons {
