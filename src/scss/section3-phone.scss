@@ -5,8 +5,10 @@
 
   @media screen and (max-width: 1000px) 
   {
+    background-size: 100% 50%;
     background-position-y: bottom;
-    padding: 8% 20px 45% 15%;
+    background-attachment: right;
+    padding: 8% 20px 55% 15%;
   }
 
   &__conteiner {
