@@ -69,7 +69,7 @@
 
       &-sell {
         @include flexes(flex, column, center,center);
-        width: 100%;
+        max-width: 90%;
       }
       &-img {
         fill:#00ADEE;

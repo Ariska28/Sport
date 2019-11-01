@@ -2,17 +2,26 @@
     background: #00ADEE;
     margin-bottom: -75px;
     @media screen and (max-width:900px) {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+
     }
+
     &__conteiner {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         padding: 3% 20px;
         max-width:1150px;
-        margin: auto;
-        flex-wrap: wrap;
-        
+        justify-content: space-between;
+        @media screen and (max-width:900px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+   
     }
 
     &-sport{
@@ -24,6 +33,11 @@
         line-height: 29px;
         color: #FFFFFF;
         letter-spacing: -0.02em;
+        @media screen and (max-width:900px) {
+            order: 1;
+            justify-content: flex-start;
+            margin-bottom: 3%;
+        }
     
         &__img {
             @include svg(25px,25px);
@@ -33,6 +47,10 @@
 
     &-links {
         display: flex;
+        @media screen and (max-width:900px) {
+            order: 3;
+            margin-bottom: 3%;
+        }
 
     }
     &-link {
@@ -41,11 +59,18 @@
         line-height: 21px;
         color: #fff;
         margin-right: 36px;
+        @media screen and (max-width:900px) {
+            margin-right: 6%;
+        }
     }
 
 
     &-networks {
         display: flex;
+        @media screen and (max-width:900px) {
+            order: 2;
+            margin-bottom: 3%;
+        }
 
         &__circle {
             height: 25px;
@@ -64,63 +89,3 @@
 }
 
 
-@media screen and (max-width:1160px) {
-    .footer {
-        &__conteiner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3% 20px;
-            width:900px;
-            margin: auto;
-            flex-wrap: wrap;
-        }
-    
-        &-sport{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 29px;
-            color: #FFFFFF;
-            letter-spacing: -0.02em;
-        
-            &__img {
-                @include svg(25px,25px);
-            }
-        }
-    
-    
-        &-links {
-            display: flex;
-    
-        }
-        &-link {
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 21px;
-            color: #fff;
-            margin-right: 36px;
-        }
-    
-    
-        &-networks {
-            display: flex;
-    
-            &__circle {
-                height: 25px;
-                width: 25px;
-                background: white;
-                border-radius:50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 17px;
-            }
-            &__img {
-                @include svg(15px,15px);
-            }
-        }
-    }
-}

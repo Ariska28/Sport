@@ -78,6 +78,14 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 4px 12px;
+            @media screen and (max-width: 380px) 
+            {
+                padding: 5px 5px;
+            }
+            @media screen and (max-width: 340px) 
+            {
+                padding: 5px 2px;
+            }
 
             &--margin {
                 margin-left: 20px;

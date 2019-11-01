@@ -67,12 +67,18 @@
 
     <main>
         <section class="football">
+            <div class="football-gradient">
             <div class="football__conteiner">
-                <img class="football-gradient" src="img/grafient.svg" alt="">
                 <div class="football__flex-conteiner">
                     <div class="football-photos">
-                        <img class="football-video" src="img/SAMPLE02.svg" alt="">
-                        <img class="football-window" src="img/window.svg" alt="">
+                        <div class="football-photos__conteiner">
+                            <div class="football-video">
+                            <img class="football-video__img" src="img/SAMPLE02.svg" alt="">
+                            </div>
+                            <div class="football-window">
+                            <img class="football-window__img" src="SAMPLE01.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="football-caption">
@@ -92,12 +98,13 @@
                 </div>
 
             </div>
+        </div>
         </section>
 
         <section class="phone">
             <div class="phone__conteiner">
                 <div class="phone-caption">
-                    <a href="#" class="football-caption__link">GET STARTED</a>
+                    <div class="football-caption__link">GET STARTED</div>
                     <a href="#">
                         <h2 class="football-caption__headline">User-friendly Interface</h2>
                     </a>                
@@ -406,7 +413,7 @@
 
                     <a href="#" class="logotype-block__link-img">
                         <svg class="logotype-block__img logotype-block__img2">
-                            <use xlink:href="#sports">
+                            <use xlink:href="#sports" y="2">
                             </use>
                         </svg>
                     </a>
@@ -459,7 +466,7 @@
                         got all this:
                     </p>
                     <div class="team-caption__buttons">
-                        <button class="team-caption__button">
+                        <a class="team-caption__button">
                             <svg class="team-caption__button-img">
                                 <use xlink:href="#apple">
                                 </use>
@@ -469,8 +476,8 @@
                                 <span class="team-caption__button-paragraph--big">
                                     App Store </span>
                             </p>
-                        </button>
-                        <button class="team-caption__button header-caption__button--margin">
+                        </a>
+                        <a class="team-caption__button header-caption__button--margin">
                             <svg class="team-caption__button-img">
                                 <use xlink:href="#google-play">
                                 </use>
@@ -481,7 +488,7 @@
                                     Google <span class="team-caption__button2-paragraph--big-thin"> play </span>
                                 </span>
                             </p>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -2,19 +2,41 @@
   overflow: hidden;
   background: url('../img/circlePhone.svg') no-repeat;
   background-attachment: right;
+  background-size: 80%;
 
-  @media screen and (max-width: 1000px) 
+  @media screen and (max-width: 1000px) and (min-width:500px)
   {
-    background-size: 100% 50%;
+    background-size: 150% 50%;
     background-position-y: bottom;
     background-attachment: right;
-    padding: 8% 20px 55% 15%;
+    padding: 8% 20px 55% 22px;
+  }
+  @media screen and (max-width: 340px) 
+  {
+    background-size: 250% 40%;
+    background-position-y: bottom;
+    background-position-x: 80%;
+    padding: 8% 20px 100% 22px;
+  }
+  @media screen and (max-width: 500px) and (min-width: 340px)
+  {
+    background-size: 250% 40%;
+    background-position-y: bottom;
+    background-position-x: 75%;
+    padding: 8% 20px 90% 22px;
   }
 
   &__conteiner {
       max-width:1150px;
       padding:8% 20px;
       margin: auto;
+      @media screen and (max-width: 1000px) 
+      {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      
   }
 
   &-caption {
@@ -23,7 +45,12 @@
     justify-content: center;
     z-index: 7;
     width: 50%;
+  
+  @media screen and (max-width: 1000px) 
+  {
+    width: 90%;
   }
+}
 }
 
 
