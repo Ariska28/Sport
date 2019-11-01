@@ -72,6 +72,17 @@
 
   }
 
+ .football-photos::before {
+    background:  linear-gradient(180deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);;
+    content:"";
+    position:absolute;
+    z-index:3;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+ }
+
 
   &-video {
     z-index: 4;   
