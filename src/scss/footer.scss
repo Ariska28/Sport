@@ -14,12 +14,20 @@
         padding: 3% 8%;
         width: 100%;
         justify-content: space-between;
-        @media screen and (max-width:900px) {
+        @media screen and (max-width:400px) {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
             padding: 12% 8%;
+        }
+
+        @media screen and (min-width:400px) and (max-width:900px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 2% 8%;
         }
    
     }
@@ -70,9 +78,13 @@
 
     &-networks {
         display: flex;
-        @media screen and (max-width:900px) {
+        @media screen and (max-width:400px) {
             order: 2;
             margin-bottom: 7%;
+        }
+        @media screen and (min-width:400px) and (max-width:900px) {
+            order: 2;
+            margin-bottom: 2%;
         }
 
         &__circle {
