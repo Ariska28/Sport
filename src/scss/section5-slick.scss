@@ -5,19 +5,7 @@
   position: relative;
   margin-bottom: 20px;
 
-  &-invisible--l {
-    position: absolute;
-    z-index: 1;
-    left: -2%;
-    top: -5%;
-    @media screen and (max-width:1000px){
-      display: none;
-    }
-
-    &__img {
-      height: 200px;
-    }
-  }
+ 
 
   &-invisible--r {
     position: absolute;
@@ -114,10 +102,18 @@
       flex-direction: column;
       justify-content: space-around;
       padding: 20px;
-      overflow: auto;
-      
-      @media screen and (max-width:1000px){
-        margin: 0 90px;
+      overflow: hidden;
+
+    
+
+      @media screen and  (max-width:1000px) and (min-width:600px) {
+        overflow: auto;
+      }
+
+      @media screen and (max-width:600px){
+        margin: 0 50px;
+        width: 250px;
+
         
       }
 

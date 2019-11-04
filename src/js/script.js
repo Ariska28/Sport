@@ -11,6 +11,16 @@ $().ready(function () {
         {
           breakpoint: 1000,
           settings: {
+            slidesToShow: 2,
+            dots: true,
+            centerPadding: '50px',
+            centerMode: true,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
             slidesToShow: 1,
             dots: true,
             centerPadding: '0px',
