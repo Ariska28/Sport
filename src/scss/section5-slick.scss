@@ -1,28 +1,9 @@
 .slick {
-  height: 400px;
   overflow: hidden;
   @include flexes(flex, column, center, space-around);
   position: relative;
   margin-bottom: 20px;
 
- 
-
-  &-invisible--r {
-    position: absolute;
-    z-index: 1;
-    right: -2%;
-    top: -5%;
-    transform: rotate(180deg);
-    @media screen and (max-width:1000px){
-      display: none;
-    }
-    
-
-
-    &__img {
-      height: 200px;
-    }
-  }
 
   &__prewarrow {
     height: 47px;
@@ -97,24 +78,21 @@
       border: 1px solid #828282;
       border-radius: 4px;
       margin: 0 16px;
-      max-height: 150px;
+      height: 1em;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       padding: 20px;
       overflow: hidden;
 
-    
-
-      @media screen and  (max-width:1000px) and (min-width:600px) {
-        overflow: auto;
-      }
-
       @media screen and (max-width:600px){
         margin: 0 50px;
-        width: 250px;
+        width: 250px;    
+      }
 
-        
+      @media screen and (min-width:600px) and (max-width:800px){
+        margin: 0 50px;
+        width: 150px;    
       }
 
       &-describe {
@@ -159,12 +137,15 @@
         margin-left: auto;
       }
     }
+
+    
   }
+
 
   &__block::after {
     content: "";
     width: 30%;
-    height: 200px;
+    height: 300px;
     z-index: 10;
     position: absolute;
     left: -15%;
@@ -175,14 +156,12 @@
   &__block::before {
     content: "";
     width: 30%;
-    height: 200px;
+    height: 300px;
     z-index: 10;
     position: absolute;
     right: -15%;
     background: linear-gradient(270deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
   }
-
-
 
   &-slick {
     width: 90%;
@@ -192,7 +171,8 @@
   &-track {
      height: 180px;
     margin-left: auto;
-    margin-top:30px
+    margin-top:30px;
+    margin-bottom: 30px;
       
   }
 }
