@@ -42,26 +42,9 @@
         align-items: center;
     }
 
-    .logotype-block__group1 {
-      display: flex;
-      flex-grow: 1.5;
-      justify-content: space-around;
-
+    &__link-img {
+      margin:0 2%;
     }
-    
-    .logotype-block__group2 {
-      display: flex;
-      flex-grow: 1.5;
-      justify-content: space-around;
-    }
-    
-    .logotype-block__group3 {
-      display: flex;
-      flex-grow: 1;
-      justify-content: space-around;
-    }
-
- 
 
     &__img {
       margin-right: 15px;

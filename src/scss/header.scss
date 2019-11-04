@@ -14,8 +14,11 @@
     overflow: hidden;
     background-color: #F4F6F9;
     background-image :url('../img/Mobile.svg') no-repeat;
+    -ms-background-image :url('../img/Mobile.svg') no-repeat;
     background-position: top right;
+    -ms-background-position: top right;
     background-size:  60%;
+    -ms-background-size:  60%;
     @media screen and (max-width: 1160px) 
     {
         background-image:none;

@@ -1,9 +1,9 @@
 .team {
     overflow: hidden;
-    background: url('../img/team.svg') no-repeat;
+    background: url('../img/section7.jpg') no-repeat;
     background-size: 50% 100%;
     @media screen and (max-width:800px) {
-        background-size: 100% 50%;
+        background-size: 100%;
         background-position-y: bottom;
         background-position-x: center;
     }
@@ -15,11 +15,15 @@
         display: flex;
         justify-content: flex-end;
         @media screen and (max-width:800px) {
-            padding: 7% 20px 57%;
+            padding: 7% 20px 80%;
 
         }
         @media screen and (max-width:550px) {
-            padding: 7% 20px 120%;
+            padding: 7% 20px 80%;
+        }
+
+        @media screen and (max-width:900px) and (min-width:800px) {
+            padding: 1% 10px;
         }
 
     }
@@ -63,7 +67,7 @@
         &__buttons {
             display: flex;
             width: 100%;
-            @media screen and (max-width:1100px) {
+            @media screen and (max-width:800px) {
                 justify-content: center;
                 margin-bottom: 20px;
             }
