@@ -2,7 +2,11 @@
   overflow: hidden;
   @include flexes(flex, column, center, space-around);
   position: relative;
-  margin-bottom: 15%;
+  margin-bottom: 20px;
+
+  @media screen and (max-width:400px){
+    margin-bottom: 15%;
+  }
 
 
   &__prewarrow {

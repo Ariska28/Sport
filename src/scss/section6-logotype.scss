@@ -8,9 +8,17 @@
 
   &__conteiner {
     max-width:1150px;
-    padding:15% 20px;
+    padding:3.5% 20px;
     margin: auto;
+
+    @media screen and (max-width:400px)
+    {
+  
+      padding:15% 20px;
+    }
 }
+
+
 
    
   @media screen and (max-width:1000px)
