@@ -98,6 +98,8 @@
     }
   }
 
+ 
+
   &__block {
     width: 100%;
     z-index: 0;
@@ -162,6 +164,29 @@
       }
     }
   }
+
+  &__block::after {
+    content: "";
+    width: 30%;
+    height: 200px;
+    z-index: 10;
+    position: absolute;
+    left: -15%;
+    top:0;
+    background:  linear-gradient(90deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
+  }
+
+  &__block::before {
+    content: "";
+    width: 30%;
+    height: 200px;
+    z-index: 10;
+    position: absolute;
+    right: -15%;
+    background: linear-gradient(270deg, #FFFFFF 49.84%, rgba(255, 255, 255, 0) 126.7%);
+  }
+
+
 
   &-slick {
     width: 90%;
