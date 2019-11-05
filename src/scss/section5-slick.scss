@@ -75,6 +75,7 @@
 
   &__block {
     width: 100%;
+    height: auto;
     z-index: 0;
 
     &__item {
@@ -173,10 +174,15 @@
   }
 
   &-track {
-     height: 180px;
+    display: flex !important;
+    align-items: stretch;
     margin-left: auto;
     margin-top:30px;
     margin-bottom: 30px;
-      
+
+  }
+
+  &-slide {
+    height: auto !important;
   }
 }
